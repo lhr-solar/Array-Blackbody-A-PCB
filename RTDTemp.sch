@@ -19,8 +19,6 @@ Text Notes 2850 3000 0    60   ~ 0
 NOTE: We would ordinarily isolate the Nucleo from\nthe high power regions, but we don't have a good\nway to do that without redesigning our sensors and\nour software. Therefore, for reasons of expediency,\nwe're placing the Nucleo on the high power plane.
 Text Label 1000 3700 2    60   ~ 12
 CAN_Rx
-NoConn ~ 1200 2500
-NoConn ~ 1200 2600
 NoConn ~ 1200 3400
 NoConn ~ 1200 3500
 NoConn ~ 1200 3600
@@ -76,28 +74,6 @@ LEDs
 Text Notes 1200 900  0    60   ~ 0
 Status LEDs for\nat-a-glance\ninformation
 $Comp
-L RTDTemp-rescue:LED_ALT-MPPT-rescue LED3
-U 1 1 5BC3DA9B
-P 1450 1650
-F 0 "LED3" H 1450 1750 50  0000 C CNN
-F 1 "Car Power Live?" H 1450 1500 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 1450 1650 50  0001 C CNN
-F 3 "" H 1450 1650 50  0001 C CNN
-	1    1450 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RTDTemp-rescue:R_Small-MPPT-rescue R14
-U 1 1 5BC3DAA7
-P 1450 1300
-F 0 "R14" H 1480 1320 50  0000 L CNN
-F 1 "2K" H 1480 1260 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 1450 1300 50  0001 C CNN
-F 3 "" H 1450 1300 50  0001 C CNN
-	1    1450 1300
-	-1   0    0    1   
-$EndComp
-$Comp
 L RTDTemp-rescue:LED_ALT-MPPT-rescue LED7
 U 1 1 5BC584BD
 P 1800 1650
@@ -128,28 +104,6 @@ F 1 "+9VA" H 1800 1300 50  0000 C CNN
 F 2 "" H 1800 1150 50  0001 C CNN
 F 3 "" H 1800 1150 50  0001 C CNN
 	1    1800 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L RTDTemp-rescue:GNDREF-MPPT-rescue #PWR041
-U 1 1 5BC77E73
-P 1450 1900
-F 0 "#PWR041" H 1450 1650 50  0001 C CNN
-F 1 "GNDREF" H 1450 1750 50  0000 C CNN
-F 2 "" H 1450 1900 50  0001 C CNN
-F 3 "" H 1450 1900 50  0001 C CNN
-	1    1450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L RTDTemp-rescue:+12V-MPPT-rescue #PWR042
-U 1 1 5BC781A9
-P 1450 1150
-F 0 "#PWR042" H 1450 1000 50  0001 C CNN
-F 1 "+12V" H 1450 1290 50  0000 C CNN
-F 2 "" H 1450 1150 50  0001 C CNN
-F 3 "" H 1450 1150 50  0001 C CNN
-	1    1450 1150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -216,8 +170,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 3700 1200 3700
 Wire Wire Line
-	1000 2900 1200 2900
-Wire Wire Line
 	5850 2100 5800 2100
 Wire Wire Line
 	2950 3800 2950 3700
@@ -232,12 +184,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 1200 2650 1100
 Wire Wire Line
-	1450 1900 1450 1850
-Wire Wire Line
-	1450 1500 1450 1400
-Wire Wire Line
-	1450 1200 1450 1150
-Wire Wire Line
 	1800 1150 1800 1200
 Wire Wire Line
 	1800 1400 1800 1500
@@ -247,17 +193,6 @@ Wire Wire Line
 	7750 2000 7850 2000
 Wire Wire Line
 	6150 2100 6200 2100
-$Comp
-L RTDTemp-rescue:Nucleo_L432KC-MPPT-rescue U2
-U 1 1 5BBBD3B0
-P 1700 3200
-F 0 "U2" H 1700 2350 60  0000 C CNN
-F 1 "Nucleo_L432KC" H 1700 4050 60  0000 C CNN
-F 2 "UTSVT_Special:NucleoL432KC" H 1700 2900 60  0001 C CNN
-F 3 "" H 1700 2900 60  0001 C CNN
-	1    1700 3200
-	1    0    0    -1  
-$EndComp
 $Comp
 L RTDTemp-rescue:TEST-MPPT-rescue TP26
 U 1 1 5BCE457C
@@ -291,20 +226,6 @@ Wire Wire Line
 	2200 3600 2450 3600
 Wire Wire Line
 	2450 2900 2200 2900
-$Comp
-L RTDTemp-rescue:PWR_FLAG-MPPT-rescue #FLG0105
-U 1 1 5F3734A8
-P 1450 1850
-F 0 "#FLG0105" H 1450 1925 50  0001 C CNN
-F 1 "PWR_FLAG" V 1450 1977 50  0000 L CNN
-F 2 "" H 1450 1850 50  0001 C CNN
-F 3 "" H 1450 1850 50  0001 C CNN
-	1    1450 1850
-	0    -1   -1   0   
-$EndComp
-Connection ~ 1450 1850
-Wire Wire Line
-	1450 1850 1450 1800
 Connection ~ 2300 3900
 Wire Wire Line
 	2300 3900 2300 4050
@@ -417,17 +338,6 @@ Wire Wire Line
 Connection ~ 5000 3500
 Wire Wire Line
 	5000 3500 5150 3500
-$Comp
-L RTDTemp-rescue:PDS1-Sx-Sx-utsvt-power-regulators U3
-U 1 1 5EB6D889
-P 4250 3550
-F 0 "U3" H 4250 3887 60  0000 C CNN
-F 1 "PDS1-Sx-Sx" H 4250 3781 60  0000 C CNN
-F 2 "UTSVT_ICs:PDSx-S" H 4250 3500 60  0001 C CNN
-F 3 "" H 4250 3500 60  0001 C CNN
-	1    4250 3550
-	1    0    0    -1  
-$EndComp
 Connection ~ 4700 3500
 Wire Wire Line
 	4700 3500 5000 3500
@@ -485,28 +395,13 @@ F 3 "" H 3550 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 3400 3450 3500
-$Comp
-L power:GND #PWR0103
-U 1 1 5E5C95E9
-P 3650 3100
-F 0 "#PWR0103" H 3650 2850 50  0001 C CNN
-F 1 "GND" H 3655 2927 50  0000 C CNN
-F 2 "" H 3650 3100 50  0001 C CNN
-F 3 "" H 3650 3100 50  0001 C CNN
-	1    3650 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 2800 1200 2800
 Wire Wire Line
 	1100 4050 1100 2800
 Wire Wire Line
 	2550 2450 2550 2800
-NoConn ~ 1200 2700
 NoConn ~ 2200 2700
 Text Label 1000 2900 2    60   ~ 12
 CAN_Tx
-NoConn ~ 1200 3200
 Wire Wire Line
 	3550 3300 3550 3100
 Wire Wire Line
@@ -515,14 +410,12 @@ Text GLabel 2200 3900 3    40   Input ~ 0
 CLK
 Text GLabel 1200 3300 0    40   Input ~ 0
 DRDY
-NoConn ~ 1200 3100
 Text GLabel 1200 3800 0    40   Input ~ 0
 SDI
 Text GLabel 1200 3900 0    40   Input ~ 0
 SDO
 Text GLabel 2450 2900 2    40   Input ~ 0
 CS_7
-NoConn ~ 1200 3000
 Text GLabel 2450 3000 2    40   Input ~ 0
 CS_6
 Text GLabel 2450 3100 2    40   Input ~ 0
@@ -2944,4 +2837,56 @@ F 3 "" H 4300 15450 50  0001 C CNN
 $EndComp
 Text GLabel 3800 14450 0    40   Input ~ 0
 CS_6
+$Comp
+L RTDTemp-rescue:PDS1-Sx-Sx-utsvt-power-regulators U3
+U 1 1 5EB6D889
+P 4250 3550
+F 0 "U3" H 4250 3887 60  0000 C CNN
+F 1 "PDS1-Sx-Sx" H 4250 3781 60  0000 C CNN
+F 2 "UTSVT_ICs:PDSx-S" H 4250 3500 60  0001 C CNN
+F 3 "" H 4250 3500 60  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FD57E19
+P 1000 3200
+F 0 "J1" H 1100 2900 50  0000 C CNN
+F 1 "Conn_01x02" H 1100 3000 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical" H 1000 3200 50  0001 C CNN
+F 3 "~" H 1000 3200 50  0001 C CNN
+	1    1000 3200
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1200 3000
+NoConn ~ 1200 2700
+Wire Wire Line
+	1100 2800 1200 2800
+$Comp
+L RTDTemp-rescue:Nucleo_L432KC-MPPT-rescue U2
+U 1 1 5BBBD3B0
+P 1700 3200
+F 0 "U2" H 1700 2350 60  0000 C CNN
+F 1 "Nucleo_L432KC" H 1700 4050 60  0000 C CNN
+F 2 "UTSVT_Special:NucleoL432KC" H 1700 2900 60  0001 C CNN
+F 3 "" H 1700 2900 60  0001 C CNN
+	1    1700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2900 1200 2900
+NoConn ~ 1200 2500
+NoConn ~ 1200 2600
+$Comp
+L RTDTemp-rescue:GNDPWR-MPPT-rescue #PWR0103
+U 1 1 5FE403E5
+P 3650 3100
+F 0 "#PWR0103" H 3650 2900 50  0001 C CNN
+F 1 "GNDPWR" H 3650 2970 50  0000 C CNN
+F 2 "" H 3650 3050 50  0001 C CNN
+F 3 "" H 3650 3050 50  0001 C CNN
+	1    3650 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
