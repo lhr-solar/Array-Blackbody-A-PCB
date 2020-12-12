@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name Array-RTDPCB)(type KiCad)(uri ${KIPRJMOD}/Array-RTDPCB.pretty)(options "")(descr ""))
 )
