@@ -5,12 +5,12 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 9
 Title "UT SVT Irradiance/RTD Sensor Board"
-Date "2020-12-07"
+Date "2020-12-13"
 Rev "Rev1.0"
 Comp "UT Solar Vehicle Team"
 Comment1 "Jacob Giddens"
 Comment2 "Matthew Yu"
-Comment3 "Professor Gary Hallock"
+Comment3 "Gary Hallock"
 Comment4 ""
 $EndDescr
 Text Notes 700  3880 0    120  ~ 24
@@ -297,10 +297,10 @@ Wire Wire Line
 Wire Wire Line
 	15620 1610 15620 2210
 $Comp
-L Connector:TestPoint TP13
+L Connector:TestPoint TP12
 U 1 1 5BC9CD87
 P 14270 2610
-F 0 "TP13" V 14300 2790 50  0000 L BNN
+F 0 "TP12" V 14300 2790 50  0000 L BNN
 F 1 "CAN_L" V 14350 2790 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 14270 2610 50  0001 C CNN
 F 3 "" H 14270 2610 50  0001 C CNN
@@ -308,10 +308,10 @@ F 3 "" H 14270 2610 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP12
+L Connector:TestPoint TP11
 U 1 1 5BC9CC23
 P 14170 2360
-F 0 "TP12" H 14170 2630 50  0000 C BNN
+F 0 "TP11" H 14170 2630 50  0000 C BNN
 F 1 "CAN_H" H 14170 2590 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 14170 2360 50  0001 C CNN
 F 3 "" H 14170 2360 50  0001 C CNN
@@ -319,10 +319,10 @@ F 3 "" H 14170 2360 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP6
+L Connector:TestPoint TP5
 U 1 1 5BC87E62
 P 10270 2410
-F 0 "TP6" H 10270 2710 50  0000 C BNN
+F 0 "TP5" H 10270 2710 50  0000 C BNN
 F 1 "CAN_Tx" H 10270 2660 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10270 2410 50  0001 C CNN
 F 3 "" H 10270 2410 50  0001 C CNN
@@ -330,10 +330,10 @@ F 3 "" H 10270 2410 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP7
+L Connector:TestPoint TP6
 U 1 1 5BC87942
 P 10570 2410
-F 0 "TP7" H 10570 2710 50  0000 C BNN
+F 0 "TP6" H 10570 2710 50  0000 C BNN
 F 1 "CAN_Rx" H 10570 2660 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 10570 2410 50  0001 C CNN
 F 3 "" H 10570 2410 50  0001 C CNN
@@ -376,10 +376,10 @@ F 3 "" H 14120 1560 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP8
+L Connector:TestPoint TP7
 U 1 1 5BC269CB
 P 12270 1310
-F 0 "TP8" V 12370 1510 50  0000 L BNN
+F 0 "TP7" V 12370 1510 50  0000 L BNN
 F 1 "CAN_ISO_Vout" V 12270 1510 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 12270 1310 50  0001 C CNN
 F 3 "" H 12270 1310 50  0001 C CNN
@@ -387,10 +387,10 @@ F 3 "" H 12270 1310 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP10
+L Connector:TestPoint TP9
 U 1 1 5BC242A0
 P 13170 2110
-F 0 "TP10" V 13200 2320 50  0000 L BNN
+F 0 "TP9" V 13200 2320 50  0000 L BNN
 F 1 "CAN_ISO_GndIn" V 13240 2320 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 13170 2110 50  0001 C CNN
 F 3 "" H 13170 2110 50  0001 C CNN
@@ -398,10 +398,10 @@ F 3 "" H 13170 2110 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP11
+L Connector:TestPoint TP10
 U 1 1 5BC2391E
 P 13170 2260
-F 0 "TP11" V 13200 2470 50  0000 L BNN
+F 0 "TP10" V 13200 2470 50  0000 L BNN
 F 1 "CAN_ISO_GndOut" V 13240 2460 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 13170 2260 50  0001 C CNN
 F 3 "" H 13170 2260 50  0001 C CNN
@@ -409,10 +409,10 @@ F 3 "" H 13170 2260 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP9
+L Connector:TestPoint TP8
 U 1 1 5BC226FB
 P 12270 1460
-F 0 "TP9" V 12370 1660 50  0000 L BNN
+F 0 "TP8" V 12370 1660 50  0000 L BNN
 F 1 "CAN_ISO_Vin" V 12270 1660 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 12270 1460 50  0001 C CNN
 F 3 "" H 12270 1460 50  0001 C CNN
@@ -1007,10 +1007,10 @@ Isolated Power Regions:\n* Device/Board Power\n   - +9VA, +5V, +3.3V\n   - GNDRE
 Wire Wire Line
 	1050 2670 1220 2670
 $Comp
-L Connector:TestPoint TP2
+L Connector:TestPoint TP1
 U 1 1 608B7F13
 P 4070 2950
-F 0 "TP2" H 3990 3230 50  0000 L CNN
+F 0 "TP1" H 3990 3230 50  0000 L CNN
 F 1 "Car +12V" H 3880 3160 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4270 2950 50  0001 C CNN
 F 3 "~" H 4270 2950 50  0001 C CNN
@@ -1018,10 +1018,10 @@ F 3 "~" H 4270 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint TP2
 U 1 1 608C010E
 P 4470 2950
-F 0 "TP3" H 4400 3230 50  0000 L CNN
+F 0 "TP2" H 4400 3230 50  0000 L CNN
 F 1 "Car GND" H 4300 3160 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 4670 2950 50  0001 C CNN
 F 3 "~" H 4670 2950 50  0001 C CNN
@@ -1029,10 +1029,10 @@ F 3 "~" H 4670 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L Connector:TestPoint TP3
 U 1 1 608C0667
 P 4800 2940
-F 0 "TP4" H 4730 3220 50  0000 L CNN
+F 0 "TP3" H 4730 3220 50  0000 L CNN
 F 1 "+9VA" H 4700 3150 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 5000 2940 50  0001 C CNN
 F 3 "~" H 5000 2940 50  0001 C CNN
@@ -1040,10 +1040,10 @@ F 3 "~" H 5000 2940 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP5
+L Connector:TestPoint TP4
 U 1 1 608C0C20
 P 5180 2940
-F 0 "TP5" H 5110 3210 50  0000 L CNN
+F 0 "TP4" H 5110 3210 50  0000 L CNN
 F 1 "Device GND" H 4960 3150 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 5380 2940 50  0001 C CNN
 F 3 "~" H 5380 2940 50  0001 C CNN
